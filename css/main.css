@@ -1,0 +1,85 @@
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, cite,
+img, q, s, strong, b, u, i,
+dt, ul, li, tr, th,
+article, footer, header,
+menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote {
+    quotes: none;
+    font-style: italic;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: ghostwhite;
+}
+
+#main_header {
+    font-size: 36px;
+    background-color: #ffa01b;
+}
+
+#body_main {
+    font-size: 18px;
+    text-align: center;
+}
+
+.header2 {
+    font-size: 22px;
+}
+
+.main_section {
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    margin: 20px 5px 5px;
+}
+
+.name_of_page {
+    text-align: center;
+    font-size: 50px;
+}
+
+.main_section_item {
+    display: inline-block;
+    margin: 10px 100px 10px;
+}
+
+.gallery {
+    display: inline-flex;
+    width: auto;
+    background: white;
+    box-shadow: 5px 5px 10px #05b4e8;
+    border: 1px solid #05b4e8;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_item {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
