@@ -1,3 +1,5 @@
+"use strict";
+
 (function() {
     window.addEventListener('load', function() {
         let footer = document.querySelector('footer');

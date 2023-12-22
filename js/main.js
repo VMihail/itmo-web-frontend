@@ -1,25 +1,21 @@
-// // Получаем все пункты меню
-// var menuItems = document.querySelectorAll('#menu li');
-//
-// // Добавляем обработчик события для каждого пункта
-// for (var i = 0; i < menuItems.length; i++) {
-//     menuItems[i].addEventListener('mouseenter', function() {
-//         // Действия при наведении мыши на пункт
-//         this.style.backgroundColor = '#f00';
-//         this.style.color = '#fff';
-//     });
-//
-//     menuItems[i].addEventListener('mouseleave', function() {
-//         // Действия при отведении мыши от пункта
-//         this.style.backgroundColor = 'transparent';
-//         this.style.color = '#000';
-//     });
-// }
+"use strict";
 
-let menu = document.querySelectorAll("#menu li");
+const cssOnMouseDown = "#menu {\n" +
+    "    list-style-type: none;\n" +
+    "    padding: 0;\n" +
+    "}\n";
 
-console.log(menu);
+const cssOnMouseOver = "border: 2px solid black; padding: 10px;";
 
-for (let i = 0; i < menu.length; i++) {
-    console.log(menu[i]);
+let onMouse = (paragraph, cssText) => {
+    let menu = document.querySelectorAll("#menu li");
+    paragraph.style.cssText = cssText;
+}
+
+let onMouseOver = (paragraph) => {
+    onMouse(paragraph, cssOnMouseOver);
+}
+
+let onMouseDown = (paragraph) => {
+    onMouse(paragraph, cssOnMouseDown)
 }

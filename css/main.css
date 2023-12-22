@@ -61,7 +61,7 @@ html, body {
     font-size: 22px;
 }
 
-.main_section {
+#main_section {
     display: inline-block;
     text-align: left;
     justify-content: center;
@@ -96,11 +96,11 @@ html, body {
 }
 
 @media (orientation: portrait) {
-    .main_section {
+    #main_section {
         display: inline-block;
     }
 
-    div:not(.main_section) {
+    div:not(#main_section) {
         display: none;
     }
 }
