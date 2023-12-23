@@ -19,3 +19,30 @@ let onMouseOver = (paragraph) => {
 let onMouseDown = (paragraph) => {
     onMouse(paragraph, cssOnMouseDown)
 }
+
+let cssOnCurrentPage = "color: red;";
+let predId = "menu#firstItem";
+let element = document.getElementById(predId);
+element.cssText = cssOnCurrentPage;
+
+
+let onClick = (paragraph) => {
+    console.info("currentId = " + paragraph.id);
+    let currentId = paragraph.id;
+
+}
+
+// let hrefArray = window.location.pathname.split("/");
+// let fileName = hrefArray[hrefArray.length - 1];
+// console.info("current file name: " + fileName);
+// switch (fileName) {
+//     case "index.html":
+//         console.log(1);
+//         break;
+//     case "aboutUs.html":
+//         console.log(2);
+//         break;
+//     case "topForWeek.html":
+//         console.log(3);
+//         break;
+// }
