@@ -8,11 +8,11 @@
     <meta name="description" content="Галерея котиков">
 
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/tmp.css">
+    <link rel="stylesheet" href="css/onClick.css">
 
     <script src="js/helloWorldScript.js"></script>
     <script src="js/IIFE.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/onClick.js"></script>
 </head>
 
 <body>
@@ -123,11 +123,12 @@
                 </tr>
             </table>
         </section>
-        <ul id="menu">
-            <li id="firstItem" onmouseover="onMouseOver(this)" onmouseout="onMouseDown(this)" onclick="onClick(this)"><a href="#">Пункт 1</a></li>
-            <li id="secondItem" onmouseover="onMouseOver(this)" onmouseout="onMouseDown(this)" onclick="onClick(this)"><a href="#">Пункт 2</a></li>
-            <li onmouseover="onMouseOver(this)" onmouseout="onMouseDown(this)"><a href="#" onclick="onClick(this)">Пункт 3</a></li>
+        <ul>
+            <li><a href="#" onclick="highlightMenu(this)">Пункт меню 1</a></li>
+            <li><a href="#" onclick="highlightMenu(this)">Пункт меню 2</a></li>
+            <li><a href="#" onclick="highlightMenu(this)">Пункт меню 3</a></li>
         </ul>
+
     </main>
 
     <footer class="main_footer">
