@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote {
+    quotes: none;
+    font-style: italic;
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: ghostwhite;
+}
+
+.main_header {
+    position: absolute;
+    font-size: 36px;
+    background-color: #ffa01b;
+}
+
+.body_main {
+    font-size: 18px;
+    text-align: center;
+}
+
+.header2 {
+    font-size: 22px;
+}
+
+#main_section {
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    margin: 20px 5px 5px;
+}
+
+.name_of_page {
+    text-align: center;
+    font-size: 50px;
+}
+
+.main_section_item {
+    display: inline-block;
+    margin: 10px 90px 10px;
+}
+
+.gallery {
+    display: inline-flex;
+    width: auto;
+    background: white;
+    box-shadow: 5px 5px 10px #05b4e8;
+    border: 1px solid #05b4e8;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery_item {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (orientation: portrait) {
+    #main_section {
+        display: inline-block;
+    }
+
+    div:not(#main_section) {
+        display: none;
+    }
+}
+
+.main_footer {
+    position: absolute;
+    background-color: #ffa01b;
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+
+table {
+    border-collapse: collapse;
+    color: black;
+}
+
+table td {
+    width: 10vw;
+    padding: 10px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffa01b;
+}
+
+table tr:first-child {
+    background-color: #b90000;
+    color: #ffc471;
+}
+
+.cat_category {
+    width: 80%;
+    height: 100%;
+    background-color: #cacfee;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #43436e;
+}
+
+.cat_category h1 {
+    color: #43436e;
+}

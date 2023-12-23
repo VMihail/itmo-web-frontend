@@ -6,26 +6,33 @@
     <title>Культ котов</title>
     <meta name="keywords" content="коты, котики, котята">
     <meta name="description" content="Галерея котиков">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/onClick.css">
+
+    <script src="js/helloWorldScript.js"></script>
+    <script src="js/IIFE.js"></script>
+    <script src="js/onClick.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Культ котов</h1>
+    <header class="main_header">
+        <h1 class="name_of_page">Культ котов</h1>
         <nav>
-            <ul>
-                <li>Главная</li>
-                <li>Каталог</li>
-                <li>Топ за неделю</li>
-                <li>О нас</li>
-                <li>Контакты</li>
+            <ul class="main_section">
+                <li class="main_section_item"><a href="index.html">Главная</a></li>
+                <li class="main_section_item"><a href="index.html">Каталог</a></li>
+                <li class="main_section_item"><a href="html/topForWeek.html">Топ за неделю</a></li>
+                <li class="main_section_item"><a href="html/aboutUs.html">О нас</a></li>
+                <li class="main_section_item"><a href="index.html">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h2>Кото-галерея</h2>
+    <main class="body_main">
+        <h2 class="header2">Кото-галерея</h2>
         <section>
-            <p>Одна из страниц клуба любитетей котов. Тут вы найдете фотографии котиков и их описание.</p>
+            <p style="font-size: 20px;">Одна из страниц клуба любитетей котов. Тут вы найдете фотографии котиков и их описание.</p>
             <article>
                 <blockquote>
                     <p>За котика в решение задачи по алгосам - доп баллы</p>
@@ -51,33 +58,33 @@
        (,;  (,,)
             </pre>
         </section>
-        <h2><strong>КОтолог</strong></h2>
-        <section>
+        <h2 class="header2"><strong>КОтолог</strong></h2>
+        <section class="gallery">
             <ul>
-                <li>Балдежный кот<br>
+                <li class="gallery_item">Балдежный кот<br>
                     <i>Этого кота я нашел в гугле, выполняя домашнее задание.</i><br>
                     <img src="images/cat1.png" alt="" width="600" height="400">
                 </li>
-                <li>Достойный кот<br>
+                <li class="gallery_item">Достойный кот<br>
                     <i>
                         Этого котика я встретил в телеграмм канале про котов, потом я отправил его фотографию другу,
                         он сказал, что ему нужно налить бакал вина.
                     </i><br>
                     <img src="images/cat2.png" alt="" width="600" height="400">
                 </li>
-                <li>Снова достойный кот<br>
+                <li class="gallery_item">Снова достойный кот<br>
                     <i>
                         А вот ему уже наливают бакал вина. Обратите внимание на его спокойный взгляд.
                     </i><br>
                     <img src="images/cat3.png" alt="" width="600" height="400">
                 </li>
-                <li>А это я (Василенко Михаил)<br>
+                <li class="gallery_item">А это я (Василенко Михаил)<br>
                     <i>
                         Таким меня видят коллеги на созвоне в 10:45 утра.
                     </i><br>
                     <img src="images/cat4.png" alt="" width="600" height="400">
                 </li>
-                <li>Студенты, которые отправляют 1 лабу в ноябре<br>
+                <li class="gallery_item">Студенты, которые отправляют 1 лабу в ноябре<br>
                     <i>
                         Ути какие щлядкие
                     </i><br>
@@ -85,10 +92,47 @@
                 </li>
             </ul>
         </section>
+
+        <section class="cat_category">
+            <h1>Категория котиков</h1>
+            <table>
+                <tr>
+                    <td><h3>Название</h3></td>
+                    <td><h3>Описание</h3></td>
+                    <td><h3>Чем питается</h3></td>
+                </tr>
+                <tr>
+                    <td>Рыжий кот</td>
+                    <td>Наглые рыжие морды</td>
+                    <td>Вкусняшками</td>
+                </tr>
+                <tr>
+                    <td>Белый кот</td>
+                    <td>Очееееень красивые</td>
+                    <td>Вкусняшками</td>
+                </tr>
+                <tr>
+                    <td>Черный кот</td>
+                    <td>Можно потерять на черном фоне</td>
+                    <td>Вкусняшками</td>
+                </tr>
+                <tr>
+                    <td>Котята</td>
+                    <td>Котята с нашего сайта никогда не выростают</td>
+                    <td>Вкусняшками</td>
+                </tr>
+            </table>
+        </section>
+        <ul>
+            <li><a href="#" onclick="highlightMenu(this)">Пункт меню 1</a></li>
+            <li><a href="#" onclick="highlightMenu(this)">Пункт меню 2</a></li>
+            <li><a href="#" onclick="highlightMenu(this)">Пункт меню 3</a></li>
+        </ul>
+
     </main>
 
-    <footer class="footer">
-        <div class="contacts">
+    <footer class="main_footer">
+        <div>
             <p>Контакты</p>
             <ul class="ham-menu">
                 <li><a href="mailto:vmihail399@gmail.com">vmihail399@gmail.com</a></li>
